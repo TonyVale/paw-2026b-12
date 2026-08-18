@@ -68,7 +68,7 @@
             <contextPath>/</contextPath>
           </webApp>
           <httpConnector>
-            <port>8080</port>
+            <port>${jetty.http.port}</port>
           </httpConnector>
         </configuration>
         <dependencies>
