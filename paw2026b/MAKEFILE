@@ -1,4 +1,4 @@
-.PHONY: local
+.PHONY: local build deploy stop start clean
 
 local: build stop clean deploy start
 
