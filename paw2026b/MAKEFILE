@@ -1,0 +1,19 @@
+.PHONY: local
+
+local: build stop clean deploy start
+
+build:
+	mvn clean package
+
+stop:
+	shutdown.sh || true
+
+clean:
+	rm -rf "$$CATALINA_HOME/webapps/webapp-1.0-SNAPSHOT"
+	rm -f "$$CATALINA_HOME/webapps/webapp-1.0-SNAPSHOT.war"
+
+deploy:
+	cp webapp/target/*.war "$$CATALINA_HOME/webapps/"
+
+start:
+	startup.sh
