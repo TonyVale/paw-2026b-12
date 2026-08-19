@@ -4,6 +4,7 @@
 
 
 <html>
+<head>
     <!-- Librería de bootstrap !-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Testeo de componentes</title>
@@ -47,8 +48,6 @@
         </div>
         
     </div>
-
-
 
     <c:if test="${not empty user}">
         <p>Usuario <c:out value="${user.id}"/>: <c:out value="${user.username}"/></p>
