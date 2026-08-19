@@ -1,4 +1,6 @@
 <%@ tag pageEncoding="UTF-8" %>
+<%@ attribute name="amount" required="true" %>
+<%@ attribute name="currency" required="true" %>
 
 <div class="card shadow-sm border-0 mx-auto" style="max-width: 550px;">
     <div class="card-body p-4">
@@ -21,7 +23,7 @@
         <div class="bg-light rounded p-3 mb-4">
             <div class="d-flex justify-content-between align-items-center">
                 <span class="text-muted">Total a pagar</span>
-                <strong class="fs-4">$ 25.000,00</strong>
+                <strong class="fs-4">${currency} $${amount}</strong>
             </div>
         </div>
 
@@ -109,7 +111,7 @@
             type="button"
             class="btn btn-primary btn-lg w-100"
         >
-            Pagar $ 25.000,00
+            Pagar ${currency} $${amount}
         </button>
 
         <!-- Security message -->

@@ -12,6 +12,8 @@
 <body>
     <h2>Esta es una demo !!!</h2>
     <ui:payment    
+        amount="100"
+        currency="ARS"
     />
     <c:if test="${not empty user}">
         <p>Usuario <c:out value="${user.id}"/>: <c:out value="${user.username}"/></p>
