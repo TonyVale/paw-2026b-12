@@ -31,6 +31,8 @@
 
   <dependencyManagement>
     <dependencies>
+
+
       <!-- Modulos propios -->
       <dependency>
         <groupId>ar.edu.itba.paw</groupId>
@@ -59,6 +61,7 @@
         <artifactId>spring-webmvc</artifactId>
         <version>${org.springframework.version}</version>
       </dependency>
+
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-context</artifactId>
@@ -86,13 +89,36 @@
         <scope>runtime</scope>
       </dependency>
 
+      <!-- Front end config -->
+
       <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter</artifactId>
         <version>${junit.version}</version>
         <scope>test</scope>
       </dependency>
+
+          <dependency> 
+        <groupId>org.webjars.npm</groupId> 
+        <artifactId>popper.js</artifactId> 
+        <version>2.11.7</version> 
+      </dependency> 
+
+      <dependency>
+        <groupId>org.webjars</groupId> 
+        <artifactId>bootstrap</artifactId> 
+        <version>5.3.3</version> 
+      </dependency>
+
+      <dependency> 
+        <groupId>org.webjars</groupId> 
+        <artifactId>webjars-locator-core</artifactId> 
+        <version>0.59</version>
+      </dependency>
     </dependencies>
+
+    
+
   </dependencyManagement>
 
   <build>
