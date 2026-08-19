@@ -83,3 +83,15 @@ properties en el pom padre.
 ```
 mvn clean install
 ```
+
+### Local
+
+REQUIERES TOMCAT 11
+
+mvn clean package
+
+shutdown.sh
+
+cp webapp/target/*.war $CATALINA_HOME/webapps/
+
+startup.sh
